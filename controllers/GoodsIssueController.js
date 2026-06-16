@@ -370,7 +370,7 @@ export const RejectGoodsIssue = async (req, res) => {
     );
     await LogActivity(
       req.user?.id || null,
-      req.user?.username || "Admin",
+      req.user?.username || "Manager",
       "REJECT",
       "GOODS ISSUE",
       `Reject Goods Issue ID ${req.params.id}`,
